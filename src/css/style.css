@@ -30,3 +30,34 @@
 .dark .dark\:bg-homeBg-dark {
     background-image: url('../../assets/bg-dark.jpg');
 }
+
+.socialbtn {
+    --tw-bg-opacity: 1;
+    --tw-gradient-from: #fa5252;
+    --tw-gradient-to: rgba(250,82,82,0);
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    --tw-gradient-to: #dd2476;
+    align-items: center;
+    background-color: rgb(243 246 246/var(--tw-bg-opacity));
+    border-radius: .5rem;
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    transition-duration: .3s;
+    transition-property: color,background-color,border-color,fill,stroke,-webkit-text-decoration-color;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,-webkit-text-decoration-color;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    width: 2.5rem;
+}
+
+.dark .socialbtn {
+    --tw-bg-opacity: 1;
+    background-color: rgb(33 36 37/var(--tw-bg-opacity));
+}
+
+.socialbtn:hover {
+    --tw-text-opacity: 1;
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}
