@@ -61,3 +61,89 @@
     background-image: linear-gradient(to right,var(--tw-gradient-stops));
     color: rgb(255 255 255/var(--tw-text-opacity));
 }
+
+.after-effect {
+    --tw-gradient-from: #fa5252;
+    --tw-gradient-to: rgba(250,82,82,0);
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to);
+    --tw-gradient-to: #dd2476;
+    font-family: Kalameh,Roboto Slab,serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.after-effect::after {
+    --tw-translate-y: -50%;
+    --tw-content: "";
+    background-image: linear-gradient(to right,var(--tw-gradient-stops));
+    border-radius: .375rem;
+    content: var(--tw-content);
+    height: .125rem;
+    position: absolute;
+    top: 50%;
+}
+
+@media (min-width: 768px) {
+    .after-effect::after {
+        content: var(--tw-content);
+        width: 12rem;
+    }
+}
+
+.text-gray-lite {
+    --tw-text-opacity: 1;
+    color: rgb(68 86 108/var(--tw-text-opacity));
+}
+
+.dark .dark\:text-color-910 {
+    --tw-text-opacity: 1;
+    color: rgb(166 166 166/var(--tw-text-opacity));
+}
+
+.shadow-icon {
+    --tw-shadow: 0 4px 6px 0px rgba(0,0,0,.08);
+    --tw-shadow-colored: 0 4px 6px 0px var(--tw-shadow-color);
+}
+
+.shadow-icon, .shadow-md {
+    box-shadow: 0 0 #0000,0 0 #0000,var(--tw-shadow);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.text-oriange {
+    --tw-text-opacity: 1;
+    color: rgb(233 59 129/var(--tw-text-opacity));
+}
+
+.text-green {
+    --tw-text-opacity: 1;
+    color: rgb(106 181 185/var(--tw-text-opacity));
+}
+
+.text-color-50 {
+    --tw-text-opacity: 1;
+    color: rgb(193 124 235/var(--tw-text-opacity));
+}
+
+.text-oriange-lite {
+    --tw-text-opacity: 1;
+    color: rgb(253 117 144/var(--tw-text-opacity));
+}
+
+.dark .dark\:bg-color-990 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(33 36 37/var(--tw-bg-opacity));
+}
+
+.about-box {
+    --tw-border-opacity: 1;
+    border-color: rgb(33 36 37/var(--tw-border-opacity));
+    border-radius: .75rem;
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.dark .about-box {
+    border-width: 2px;
+}
