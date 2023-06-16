@@ -147,3 +147,7 @@
 .dark .about-box {
     border-width: 2px;
 }
+
+.dark .dark\:bg-transparent {
+    background-color: initial !important;
+}
